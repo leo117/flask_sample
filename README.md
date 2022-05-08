@@ -9,22 +9,24 @@ This project follows resource:
 ### run the app with flask
 
 
-`
-export FLASK_APP=app
-`
+Firstly initialize db
 
-`
-export FLASK_ENV=development
-`
-
-`
-flask run
-`
-
-Initialize db
-
-`
+```
 python init_db.py
-`
+```
 
+on linux
 
+````commandline
+export FLASK_APP=app
+export FLASK_ENV=development
+flask run
+````
+
+on Windows
+
+````commandline
+set FLASK_APP=app
+set FLASK_ENV=development
+flask run
+````
